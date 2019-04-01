@@ -1,6 +1,6 @@
 package com.divinkas.example.daggertextproj.ui.main.presenter;
 
-import com.divinkas.example.daggertextproj.base.BaseMenuPresenter;
+import com.divinkas.example.daggertextproj.base.BasePresenter;
 import com.divinkas.example.daggertextproj.ui.main.view.IMainView;
 import com.divinkas.example.daggertextproj.viewModel.Utils;
 
@@ -10,7 +10,7 @@ import dagger.Module;
 import retrofit2.Retrofit;
 
 @Module
-public class UserPresenterImpl extends BaseMenuPresenter<IMainView> implements UserPresenter<IMainView> {
+public class UserPresenterImpl extends BasePresenter<IMainView> implements UserPresenter<IMainView> {
 
     @Inject Retrofit retrofit;
 
